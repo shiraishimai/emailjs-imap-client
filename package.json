@@ -1,5 +1,5 @@
 {
-  "name": "emailjs-imap-client",
+  "name": "maimailjs-imap-client",
   "version": "2.0.5",
   "homepage": "https://github.com/emailjs/emailjs-imap-client",
   "description": "JavaScript IMAP client",
