@@ -1,5 +1,5 @@
 {
-  "name": "maimailjs-imap-client",
+  "name": "maimail-imap-client",
   "version": "2.0.5",
   "homepage": "https://github.com/emailjs/emailjs-imap-client",
   "description": "JavaScript IMAP client",
@@ -24,15 +24,12 @@
     "emailjs-imap-handler": "^1.0.0",
     "emailjs-mime-codec": "^1.0.1",
     "emailjs-utf7": "^3.0.1",
-    "maimailjs-tcp-socket": "^2.0.2"
+    "maimail-tcp-socket": "^2.0.2"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-mocha-test": "^0.12.7",
-    "hoodiecrow-imap": "^2.0.0",
-    "mocha": "^2.3.4",
-    "sinon": "^1.17.2"
+    "hoodiecrow-imap": "^2.0.0"
   }
 }
