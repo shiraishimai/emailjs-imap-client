@@ -23,8 +23,8 @@
     "emailjs-addressparser": "^1.0.1",
     "emailjs-imap-handler": "^1.0.0",
     "emailjs-mime-codec": "^1.0.1",
-    "emailjs-tcp-socket": "^1.0.1",
-    "emailjs-utf7": "^3.0.1"
+    "emailjs-utf7": "^3.0.1",
+    "maimailjs-tcp-socket": "^2.0.2"
   },
   "devDependencies": {
     "chai": "^3.4.1",

@@ -815,12 +815,12 @@
         if (this._enteredIdle === 'NOOP') {
             this._idleTimeout = setTimeout(() => {
                 this.logger.debug('Sending NOOP');
-                this.exec('NOOP');
+                this.exec('NOOP').catch(() => {});
             }, this.TIMEOUT_NOOP);
         } else if (this._enteredIdle === 'IDLE') {
             this.client.enqueueCommand({
                 command: 'IDLE'
-            });
+            }).catch(() => {});
             this._idleTimeout = setTimeout(() => {
                 this.client.send('DONE\r\n');
                 this._enteredIdle = false;

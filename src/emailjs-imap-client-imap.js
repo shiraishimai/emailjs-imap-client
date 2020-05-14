@@ -4,7 +4,7 @@
     if (typeof define === 'function' && define.amd) {
         define(['emailjs-tcp-socket', 'emailjs-imap-handler', 'emailjs-mime-codec', './emailjs-imap-client-compression'], factory);
     } else if (typeof exports === 'object') {
-        module.exports = factory(require('emailjs-tcp-socket'), require('emailjs-imap-handler'), require('emailjs-mime-codec'), require('./emailjs-imap-client-compression'), null);
+        module.exports = factory(require('maimailjs-tcp-socket').default, require('emailjs-imap-handler'), require('emailjs-mime-codec'), require('./emailjs-imap-client-compression'), null);
     }
 }(this, function(TCPSocket, imapHandler, mimecodec, Compression) {
     'use strict';
@@ -206,7 +206,7 @@
                 this.close().then(resolve).catch(reject);
             };
 
-            this.enqueueCommand('LOGOUT');
+            this.enqueueCommand('LOGOUT').catch(() => {});
         });
     };
 
